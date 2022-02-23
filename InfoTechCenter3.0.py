@@ -4,16 +4,17 @@ from time import sleep
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(strip=False, autoreset=True)
+import random
+
+# Welcome Branch
 
 print(Fore.RED + "Welcome to Hornets InfoTechCenter\n")
 sleep(1.0)
 
-print("Hornet's Operating System Booting Up")
+print("Hornet's Operating System Booting Up\n\n")
+sleep(1.0)
 
-
-
-import random
-
+# Gas Branch
 
 # Gas Level Function
 def gasLevelGauge():
