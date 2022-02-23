@@ -8,6 +8,5 @@ colorama.init(strip=False, autoreset=True)
 print(Fore.RED + "Welcome to Hornets InfoTechCenter\n")
 sleep(1.0)
 
-print("Hornet's Operating System Booting Up")
-
-
+print("Hornet's Operating System Booting Up\n\n")
+sleep(1.0)
