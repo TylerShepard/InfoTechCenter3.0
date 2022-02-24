@@ -10,4 +10,9 @@ def weather():
 # Calling weather Function to determine weather
 weatherAlert = weather()
 
-print(weatherAlert)
+def vehicleResponseSystem():
+    if weatherAlert == "Icy":
+        print("\nVRS Has Changed Your Alarm Based On The NWS",weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 30MPH")
+
+vehicleResponseSystem()
