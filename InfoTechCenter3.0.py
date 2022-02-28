@@ -11,7 +11,7 @@ import random
 print(Fore.RED + "Welcome to Hornets InfoTechCenter\n")
 sleep(1.0)
 
-print("Hornet's Operating System Booting Up\n\n")
+print(Fore.RED +"Hornet's Operating System Booting Up\n")
 sleep(1.0)
 
 # Gas Branch
@@ -42,6 +42,39 @@ def gasLevelAlert():
     else:
      print("     You be FULL of Gas \n You have 310 miles to empty")
 
+
+
+# Weather Branch
+
+def weather():
+    weatherForecast = ["Icy","Snowy","Raining","Windy","Foggy","Sunny"]
+    weatherConditions = random.choice(weatherForecast)
+    return weatherConditions
+
+# Calling weather Function to determine weather
+weatherAlert = weather()
+
+def vehicleResponseSystem():
+    if weatherAlert == "Icy":
+        print("\nVRS Has Changed Your Alarm Based On The NWS",weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 30MPH")
+    elif weatherAlert ==  "Snowy":
+        print("\nVRS Has Changed Your Alarm Based On The NWS",weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 50MPH")
+    elif weatherAlert == "Raining":
+        print("\nVRS Has Changed Your Alarm Based On The NWS", weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 50MPH")
+    elif weatherAlert == "Windy":
+        print("\nVRS Has Changed Your Alarm Based On The NWS", weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 60MPH")
+    elif weatherAlert == "Foggy":
+        print("\nVRS Has Changed Your Alarm Based On The NWS", weatherAlert)
+        print("\nVRS Will Only Allow Your Car To Go 50MPH")
+    else:
+        print("\n Your Vehicle May Go Max Speed")
+
 # Call Functions Here
 gasLevelAlert()
+sleep(1)
+vehicleResponseSystem()
 
